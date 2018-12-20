@@ -20,7 +20,7 @@ class Todo extends React.Component {
     });
   }
   componentWillUnmount() {
-    window.addEventListener("beforeunload", () => {
+    window.removeEventListener("beforeunload", () => {
       const todosString = JSON.stringify(this.state.todos);
       localStorage.setItem("todos", todosString);
     });
