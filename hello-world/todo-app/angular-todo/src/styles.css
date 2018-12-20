@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+button {
+  font-size: 1rem;
+  border: none;
+  background-color: lightseagreen;
+  color: #eee;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  margin: 1rem;
+}

@@ -1,0 +1,13 @@
+<form (submit)="addTodo()" class="todo-form">
+  <label for="todo-input">
+    <input
+      type="text"
+      id="todo-input"
+      [(ngModel)]="text"
+      name="todo-input"
+      placeholder="Enter a new todo..."
+      autoComplete="off"
+    />
+  </label>
+  <button type="submit" class="add-button">Add</button>
+</form>

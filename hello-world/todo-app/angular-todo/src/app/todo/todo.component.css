@@ -1,0 +1,14 @@
+.todo-root {
+  max-width: 600px;
+  margin: 1rem auto;
+  color: #222;
+  box-shadow: 2px 2px 4px #333;
+  padding-bottom: 1rem;
+}
+
+.todo-title {
+  border-bottom: 0.1rem solid darkgray;
+  background-color: lightseagreen;
+  color: #eee;
+  padding: 1rem;
+}

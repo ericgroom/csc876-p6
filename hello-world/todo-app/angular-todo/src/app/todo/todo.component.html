@@ -1,0 +1,9 @@
+<section class="todo-root">
+  <h1 class="todo-title">Todos</h1>
+  <app-todo-input></app-todo-input>
+  <button (click)="removeCompleted()">Remove Completed</button>
+  <app-todo-list
+    [todos]="todoService.todos"
+    toggleCompleted="{this.handleToggleCompleted}"
+  ></app-todo-list>
+</section>

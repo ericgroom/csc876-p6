@@ -1,0 +1,8 @@
+<ul class="todo-list">
+  <li key="{todo.id}" *ngFor="let todo of todos; let index = index">
+    <label>
+      <input type="checkbox" [(ngModel)]="todo.completed" />
+      <span [class]="todo.completed ? 'strike' : ''"> {{ todo.name }} </span>
+    </label>
+  </li>
+</ul>
