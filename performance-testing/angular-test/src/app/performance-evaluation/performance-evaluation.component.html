@@ -1,3 +1,7 @@
-<p>
-  performance-evaluation works!
-</p>
+<div className="performance-evaluation">
+  <div className="controls">
+    <button (click)="addRandom(5000)">Add 5000 random items</button>
+    <button (click)="sort()">Sort Table</button>
+  </div>
+  <app-table [items]="items"></app-table>
+</div>
