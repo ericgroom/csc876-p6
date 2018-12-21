@@ -1,0 +1,39 @@
+<template>
+  <div id="app" class="App">
+    <performance-evaluation></performance-evaluation>
+  </div>
+</template>
+
+<script>
+import PerformanceEvaluation from "./components/PerformanceEvaluation.vue";
+export default {
+  name: "app",
+  components: { PerformanceEvaluation }
+};
+</script>
+
+<style>
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+body {
+  background-color: #282c34;
+  padding: 1rem;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+</style>
