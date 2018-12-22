@@ -7,12 +7,24 @@ class LanguageDetector extends React.Component {
     text: "",
     language: null
   };
+  componentDidMount() {
+    if (
+      !process.env.REACT_APP_LANG_API_KEY &&
+      process.env.NODE_ENV !== "test"
+    ) {
+      throw new Error(
+        "environment variable REACT_APP_LANG_API_KEY is not set, api requests will not work properly"
+      );
+    }
+  }
   abortController = new AbortController();
   lastRequest = new Date();
   getLanguage = async () => {
     // Space out api requests
     const now = new Date();
-    if (now.getTime() - this.lastRequest.getTime() < 1000) return;
+    if (now.getTime() - this.lastRequest.getTime() < 1000) {
+      return;
+    }
     this.lastRequest = new Date();
     // abort any current requests
     this.abortController.abort();
