@@ -1,0 +1,10 @@
+<div>
+  <p>I know what you speak</p>
+  <input
+    type="text"
+    placeholder="type some text..."
+    [(ngModel)]="text"
+    (input)="handleChange()"
+  />
+  <p>Language: {{ language }}</p>
+</div>
